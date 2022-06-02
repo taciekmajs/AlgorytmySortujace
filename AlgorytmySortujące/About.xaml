@@ -1,0 +1,15 @@
+﻿<Window x:Class="AlgorytmySortujące.About"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AlgorytmySortujące"
+        mc:Ignorable="d"
+        FontSize="15"
+        Title="About" Height="500" Width="400">
+    <Grid>
+        <Label x:Name ="nazwa" FontSize="35" Content="Gówno, nie działa" HorizontalAlignment="Left" Height="109" Margin="10,10,0,0" VerticalAlignment="Top" Width="370" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold"/>
+        <TextBlock x:Name ="opis" HorizontalAlignment="Left" Height="336" Margin="10,124,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="370"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,38 @@
+﻿<Window x:Class="AlgorytmySortujące.HeadToHead"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AlgorytmySortujące"
+        mc:Ignorable="d"
+        FontSize="15"
+        Title="HeadToHead" Height="500" Width="400"
+        Background="#DFB5B3">
+    <Grid>
+        <Label Content="Efficiency comparision" HorizontalAlignment="Left" Height="64" Margin="14,0,0,0" VerticalAlignment="Top" Width="370" FontSize="33" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold"/>
+        <Button x:Name ="h2hBubble" Content="Bubble Sort" HorizontalAlignment="Left" Height="48" Margin="4,194,0,0" VerticalAlignment="Top" Width="123" Click="h2hBubble_Click" Background="#D9746C"/>
+        <Button x:Name ="h2hInsertion" Content="Insertion Sort" HorizontalAlignment="Left" Height="49" Margin="4,248,0,0" VerticalAlignment="Top" Width="123" Click="h2hInsertion_Click" Background="#D9746C"/>
+        <Button x:Name ="h2hMerge" Content="Merge Sort" HorizontalAlignment="Left" Height="48" Margin="4,303,0,0" VerticalAlignment="Top" Width="123" Click="h2hMerge_Click" Background="#D9746C"/>
+        <Button x:Name ="h2hHeap" Content="Heap Sort" HorizontalAlignment="Left" Height="49" Margin="4,357,0,0" VerticalAlignment="Top" Width="123" Click="h2hHeap_Click" Background="#D9746C"/>
+        <Button x:Name ="h2hQuick" Content="QuickSort" HorizontalAlignment="Left" Height="49" Margin="4,411,0,0" VerticalAlignment="Top" Width="123" Click="h2hQuick_Click" Background="#D9746C"/>
+        <TextBox x:Name ="bTime" HorizontalAlignment="Left" Height="49" Margin="132,194,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" IsReadOnly="True" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox x:Name ="iTime" HorizontalAlignment="Left" Height="49" Margin="132,248,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" IsReadOnly="True" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox x:Name ="mTime" HorizontalAlignment="Left" Height="49" Margin="132,303,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" IsReadOnly="True" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox x:Name ="hTime" HorizontalAlignment="Left" Height="49" Margin="132,357,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" IsReadOnly="True" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox x:Name ="qTime" HorizontalAlignment="Left" Height="49" Margin="132,411,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" IsReadOnly="True" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox x:Name ="bComparisons" HorizontalAlignment="Left" Height="49" Margin="284,194,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" IsReadOnly="True" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox x:Name ="iComparisons" HorizontalAlignment="Left" Height="49" Margin="284,248,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" IsReadOnly="True" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox x:Name ="mComparisons" HorizontalAlignment="Left" Height="49" Margin="284,302,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" IsReadOnly="True" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox x:Name ="hComparisons" HorizontalAlignment="Left" Height="49" Margin="284,357,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" IsReadOnly="True" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox x:Name ="qComparisons" HorizontalAlignment="Left" Height="49" Margin="284,411,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" IsReadOnly="True" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Height="28" Margin="132,172,0,0" TextWrapping="Wrap" Text="Time [ms]" VerticalAlignment="Top" Width="100"/>
+        <TextBlock HorizontalAlignment="Left" Height="28" Margin="284,172,0,0" TextWrapping="Wrap" Text="Comparisons" VerticalAlignment="Top" Width="100"/>
+        <TextBlock HorizontalAlignment="Left" Height="28" Margin="4,172,0,0" TextWrapping="Wrap" Text="Select algorithms" VerticalAlignment="Top" Width="123"/>
+        <TextBox x:Name ="arraySize" HorizontalAlignment="Left" Height="28" Margin="127,127,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="105" HorizontalContentAlignment="Center"/>
+        <Button x:Name ="Start" Content="START" HorizontalAlignment="Left" Height="28" Margin="284,127,0,0" VerticalAlignment="Top" Width="100" FontWeight="Bold" Click="Start_Click" Background="#D9746C"/>
+        <TextBlock HorizontalAlignment="Left" Height="28" Margin="18,128,0,0" TextWrapping="Wrap" Text="Size of an array:" VerticalAlignment="Top" Width="109"/>
+        <TextBlock HorizontalAlignment="Left" Height="28" Margin="4,64,0,0" TextWrapping="Wrap" Text=">10^4 not recommended for Bubble and Insertion" VerticalAlignment="Top" Width="380" Foreground="#FF6C5C5C"/>
+        <TextBlock HorizontalAlignment="Left" Height="28" Margin="4,92,0,0" TextWrapping="Wrap" Text=">10^7 not recommended for Merge and Heap" VerticalAlignment="Top" Width="380" Foreground="#FF6C5C5C"/>
+
+    </Grid>
+</Window>

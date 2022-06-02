@@ -1,0 +1,19 @@
+﻿<Window x:Class="AlgorytmySortujące.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AlgorytmySortujące"
+        mc:Ignorable="d"
+        FontSize="25"
+        Title="Main Menu" Height="500" Width="400"
+        Background="#DFB5B3">
+    <Grid>
+        <Button x:Name ="about" Content="About Sorting Algorithms" HorizontalAlignment="Left" Margin="10,124,0,0" VerticalAlignment="Top" Width="370" Height="100" Click="about_Click" Background="#D9746C"/>
+        <Button x:Name ="H2H" Content="Head to Head" HorizontalAlignment="Left" Margin="10,229,0,0" VerticalAlignment="Top" Width="370" Height="100" Click="H2H_Click" Background="#D9746C"/>
+        <Button x:Name ="charts" Content="Efficiency Charts" HorizontalAlignment="Left" Margin="10,334,0,0" VerticalAlignment="Top" Width="370" Height="100" Click="charts_Click" Background="#D9746C"/>
+        <TextBlock HorizontalAlignment="Left" Margin="299,439,0,0" Text="by Maciej Tajs" Height="21" Width="84" TextDecorations="{x:Null}" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="12" TextAlignment="Right"/>
+        <Label FontSize="35" Content="Sorting Algorithms" HorizontalAlignment="Left" Height="109" Margin="10,10,0,0" VerticalAlignment="Top" Width="370" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
